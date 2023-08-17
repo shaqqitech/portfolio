@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className='w-screen h-20 border-2 border-white fixed bottom-4 rounded-3xl bg-[#8338ec]'>
+            <nav className='w-[90%] h-20 border-2 border-white fixed bottom-4 rounded-3xl bg-[#8338ec]'>
                 <div className='w-full h-full flex justify-evenly items-center'>
                     {navTabs.map((item, ind) => (
                         <div className='relative' key={ind}>

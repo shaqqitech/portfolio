@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div className="">
+      <div className="flex flex-col justify-center items-center px-4">
         <Home />
         <About />
         <Experience />
