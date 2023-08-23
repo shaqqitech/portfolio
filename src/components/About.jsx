@@ -1,50 +1,73 @@
-import React from 'react';
+import React from "react";
+import HomePic from "../assets/images/profilepic.png";
+import { SlBadge } from "react-icons/sl";
+import { GoProjectSymlink } from "react-icons/go";
+import { MdSportsCricket } from "react-icons/md";
+import { GrReactjs } from "react-icons/gr";
+import { FaLaptopCode } from "react-icons/fa";
+import { HiLightBulb } from "react-icons/hi"; 
 
 const About = () => {
   return (
-    <div className=" min-h-screen flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-semibold flex justify-center items-center text-[#8338ec border-b-4 border-[#8338ec]">About Me</h2>
-      <div className="max-w-md p-6 bg-white rounded-md shadow-2xl flex flex-wrap">
-        <p className="text-gray-700 mb-6">
-          Greetings and welcome! I'm <strong className='text-[#8338ec]'>Shafaqat Amanat</strong>, a dedicated Frontend Developer with over 1.5 years of hands-on experience in creating stunning user interfaces using React.js and styling them with the magic of Tailwind CSS.
-        </p>
-        <div className="text-gray-700 mb-6">
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            🎨 <strong className='text-[#8338ec]'>Crafting Digital Experiences:</strong> With a background in turning ideas into reality, I specialize in transforming designs into interactive, user-friendly web applications. My journey began [1.5+ years ago], and I've been on a relentless pursuit of refining my skills ever since.
-          </p>
-          <br />
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            🚀 <strong className='text-[#8338ec]'>The React.js Enthusiast:</strong> React.js is my playground, and I revel in its component-based architecture. I've dived deep into its virtual DOM, harnessed the power of state management, and navigated the intricacies of routing. My aim is to always build scalable and efficient applications that make users' lives easier.
-          </p>
-          <br />
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            💎 <strong className='text-[#8338ec]'>Tailwind CSS Aficionado:</strong> My styling weapon of choice is Tailwind CSS. The utility-first approach it offers aligns perfectly with my philosophy of crafting efficient and beautiful designs. From responsive layouts to intricate animations, I use Tailwind to create interfaces that not only look appealing but also feel intuitive.
-          </p>
-          <br />
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            🌐 <strong className='text-[#8338ec]'>Languages of the Frontend Realm:</strong> The world of frontend development is vast, and I'm fluent in its languages. HTML is the foundation upon which I build, bringing structure to the digital canvas. CSS adds life and charm to that structure, and I wield it with precision to create visually stunning designs. JavaScript, the dynamic force that fuels interactivity, is my tool for creating seamless user experiences.
-          </p>
-          <br />
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            🤝 <strong className='text-[#8338ec]'>Collaboration and Communication:</strong> One thing I've learned on this journey is that collaboration is key. Whether it's working closely with designers to bring visions to life or seamlessly integrating with backend teams, I thrive in a collaborative environment. Effective communication, both with team members and the code itself, is at the heart of my development process.
-          </p>
-          <br />
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            🔍 <strong className='text-[#8338ec]'>Constantly Learning:</strong> The digital landscape is ever-evolving, and I'm committed to staying on the cutting edge. I'm passionate about exploring new libraries, frameworks, and techniques to ensure that my skill set is always ahead of the curve. This allows me to deliver solutions that not only meet today's demands but are also poised for tomorrow's challenges.
-          </p>
-          <br />
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            🌟 <strong className='text-[#8338ec]'>Beyond Code:</strong> While I pour my heart and soul into writing clean and efficient code, there's more to me than just pixels and lines. Outside of my developer role, I'm an avid [hobby/passion] enthusiast, [something unique or interesting about yourself]. I find that these diverse interests bring fresh perspectives to my work and keep my creativity flowing.
-          </p>
-          <br />
-          <p className='border-2 border-[#8338ec] p-4 rounded-2xl shadow-2xl'>
-            📞 <strong className='text-[#8338ec]'>Let's Connect:</strong> Whether you're here to collaborate, share insights, or just say hello, I'd love to hear from you. Feel free to reach out through [contact information]. Let's embark on a journey to create exceptional digital experiences together!
-          </p>
+    <section className="h-[fit-content] md:h-screen w-full py-12 text-center" id="about">
+      <div className="container mx-auto">
+        {/* About me Section */}
+        <h1 className="text-4xl text-[#8338ec] font-bold mb-6">About Me</h1>
+        <div className="flex flex-col md:flex-row justify-center items-center md:space-x-12 md:space-y-0 space-y-6">
+          {/* Image content */}
+          <div className="w-48 md:w-60 h-60 md:h-72 border-2 border-black rounded-full overflow-hidden mb-6 md:mb-0">
+            <img src={HomePic} alt="" className="object-cover w-full h-full" />
+          </div>
+          {/* Boxes Content */}
+          <div className="md:w-[60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Box
+              icon={<SlBadge size={35} color="white" />}
+              title="Experience"
+              value="1.5+ years"
+            />
+            <Box
+              icon={<GoProjectSymlink size={35} color="white" />}
+              title="Projects"
+              value="20+"
+            />
+            <Box
+              icon={<MdSportsCricket size={35} color="white" />}
+              title="Hobby"
+              value="Cricket"
+            />
+            <Box
+              icon={<GrReactjs size={35} color="white" />}
+              title="Favorite Library"
+              value="React JS"
+            />
+            <Box
+              icon={<FaLaptopCode size={35} color="white" />}
+              title="Skills"
+              value="Frontend Development"
+            />
+            <Box
+              icon={<HiLightBulb size={35} color="white" />}
+              title="Approach"
+              value="Self-Taught Learner"
+            />
+          </div>
         </div>
-        <p className="text-center text-gray-600">
-          Thank you for stopping by and taking the time to get to know me. Here's to the exciting possibilities of frontend development and the ever-inspiring world of technology! 🌈👩‍💻
-        </p>
+        <div className="mt-6 md:mt-12 text-center">
+          <a href="https://wa.me/+923204101834/" target="_blank" className="w-32 h-10 border-2 border-black mx-auto shadow-lg bg-[#8338ec] text-white flex justify-center items-center rounded-lg">
+            Let's Talk
+          </a>
+        </div>
       </div>
+    </section>
+  );
+};
+
+const Box = ({ icon, title, value }) => {
+  return (
+    <div className="bg-[#8338ec] rounded-xl shadow-lg p-6 space-y-2">
+      {icon}
+      <h1 className="font-bold text-white text-3xl">{title}</h1>
+      <p className="font-bold text-white text-xl">{value}</p>
     </div>
   );
 };
