@@ -7,7 +7,6 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
   return (
     <>
       <div className={`flex flex-col justify-center items-center px-4`}>

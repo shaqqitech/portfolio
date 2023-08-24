@@ -1,5 +1,5 @@
 import React from "react";
-import HomePic from "../assets/images/profilepic.png";
+import ProfilePic from "../assets/images/mainPic.png";
 import { SlBadge } from "react-icons/sl";
 import { GoProjectSymlink } from "react-icons/go";
 import { MdSportsCricket } from "react-icons/md";
@@ -15,8 +15,8 @@ const About = () => {
         <h1 className="text-4xl text-[#8338ec] font-bold mb-6">About Me</h1>
         <div className="flex flex-col md:flex-row justify-center items-center md:space-x-12 md:space-y-0 space-y-6">
           {/* Image content */}
-          <div className="w-48 md:w-60 h-60 md:h-72 border-2 border-black rounded-full overflow-hidden mb-6 md:mb-0">
-            <img src={HomePic} alt="" className="object-cover w-full h-full" />
+          <div className="w-56 md:w-72 h-60 md:h-80 mb-6 md:mb-0">
+            <img src={ProfilePic} alt="" className="object-cover w-full h-full" />
           </div>
           {/* Boxes Content */}
           <div className="md:w-[60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
