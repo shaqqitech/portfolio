@@ -3,7 +3,7 @@ import React from 'react';
 export default function Self() {
   return (
     <section className="mx-auto px-4 md:w-2/3 lg:w-1/2 xl:w-1/3 h-auto md:h-72 flex justify-center items-center">
-      <div className="w-full space-y-5 p-4 shadow-lg dark:shadow-2xl dark:shadow-gray-700">
+      <div className="w-full space-y-5 p-4 shadow-lg dark:shadow-2xl dark:shadow-gray-700 cursor-pointer hover:scale-105 duration-300">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#8338ec] text-center">
           Why did I become a frontend developer?
         </h1>

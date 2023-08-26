@@ -70,7 +70,7 @@ const Experience = () => {
 
 const ExperienceBox = ({ icon, title, description }) => {
   return (
-    <div className=" hover:scale-105 duration-300 rounded-xl shadow-lg dark:shadow-2xl dark:shadow-gray-700 p-6 space-y-4">
+    <div className=" hover:scale-105 duration-300 rounded-xl shadow-lg cursor-pointer dark:shadow-2xl dark:shadow-gray-700 p-6 space-y-4">
       {icon}
       <h1 className="font-bold text-[#8338ec] text-xl md:text-2xl lg:text-3xl">{title}</h1>
       <div>{description}</div>
