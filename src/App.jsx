@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import "./index.css";
+import Self from "./components/Self";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,6 +35,7 @@ function App() {
         <Home />
         <About />
         <Experience />
+        <Self />
         <Projects />
         <Contact />
         <Navbar />
