@@ -18,7 +18,7 @@ export default function Home() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#8338ec]">
               Frontend Developer
             </h1>
-            <h6 className="text-xl md:text-2xl lg:text-3xl font-bold dark:text-white">
+            <h6 className="text-xl md:text-2xl lg:text-3xl font-semibold dark:text-white">
               Who loves to create
             </h6>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#8338ec]">
