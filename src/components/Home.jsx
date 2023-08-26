@@ -1,5 +1,5 @@
 
-import { BsFillMoonStarsFill } from "react-icons/bs";
+
 import ProfilePic from "../assets/images/mainPic.png";
 
 export default function Home() {
@@ -7,14 +7,8 @@ export default function Home() {
 
   return (
     <>
-      <section className="w-screen h-screen px-10 py-5" id="home">
-        {/* Navbar */}
-        <div className="flex justify-around items-center">
-          <h1 className="text-3xl font-semibold">
-            Shaqqi<span className="text-[#8338ec] font-bold">Tech</span>
-          </h1>
-          <BsFillMoonStarsFill size={30} style={{ cursor: "pointer" }} />
-        </div>
+      <section className="w-full h-screen px-10 py-5" id="home">
+
         {/* Homepage content */}
         <div className="h-screen flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2">
           <div className="text-center h-80 md:h-[70vh] flex flex-col justify-center items-center space-y-2">
@@ -35,7 +29,7 @@ export default function Home() {
             <img
               src={ProfilePic}
               alt="Profile Pic"
-              className="w-56 md:w-64 lg:w-80 "
+              className="w-56 md:w-64 lg:w-80 hover:scale-105 duration-300"
             />
           </div>
         </div>
