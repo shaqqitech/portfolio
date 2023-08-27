@@ -3,8 +3,6 @@ import { FaWhatsapp, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import {MdOutlineAlternateEmail} from 'react-icons/md'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,11 +12,6 @@ const Contact = () => {
 
   const form = useRef();
 
-  const showToastMessage = () =>{
-    toast.success('Thanks for messaging !!', {
-      position: toast.POSITION.BOTTOM_RIGHT
-    })
-  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -32,7 +25,7 @@ const Contact = () => {
       setName('')
       setEmail('')
       setMessage('')
-      showToastMessage()
+      setSubmitted(true)
   };
 
 
@@ -75,9 +68,8 @@ const Contact = () => {
               className="px-4 py-2 bg-[#8338ec] text-white rounded-md hover:bg-[#6c27cc] transition duration-300"
             >
               Send
-            <ToastContainer /> 
             </button>
-            {/* {submitted && <p className="text-green-600">Message submitted successfully!</p>} */}
+            {submitted && <p className="text-green-600">Message submitted successfully!</p>}
           </form>
           <div className="flex justify-center mt-8">
             <a href="https://wa.me/+923204101834" target="_blank" rel="noopener noreferrer" className="text-[#8338ec] hover:text-[#128C7E] mx-4">
