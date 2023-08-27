@@ -26,6 +26,9 @@ const Contact = () => {
       setEmail('')
       setMessage('')
       setSubmitted(true)
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 2000);
   };
 
 
