@@ -8,9 +8,21 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import "./index.css";
 import Self from "./components/Self";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(()=>{
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [])
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);

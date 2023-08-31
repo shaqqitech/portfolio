@@ -56,7 +56,7 @@ const Projects = () => {
 
 const ProjectBox = ({ title, imageUrl, githubLink, liveDemoLink }) => {
   return (
-    <div className="w-[95%]  rounded-xl shadow-lg dark:shadow-2xl dark:shadow-gray-700 p-6 space-y-4 hover:scale-105 duration-300">
+    <div className="w-[95%]  rounded-xl shadow-lg dark:shadow-2xl dark:shadow-gray-700 p-6 space-y-4 hover:scale-105 duration-300" data-aos="fade-left">
       <img src={imageUrl} alt={title} className="h-44 max-w-full mx-auto rounded-lg object-cover grid content-center " />
       <h1 className="font-bold text-[#8338ec] text-xl md:text-2xl lg:text-3xl">{title}</h1>
       <div className="flex justify-center space-x-4">

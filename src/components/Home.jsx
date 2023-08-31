@@ -1,8 +1,9 @@
-
-
 import ProfilePic from "../assets/images/mainPic.png";
 
+
 export default function Home() {
+
+
 
 
   return (
@@ -11,7 +12,7 @@ export default function Home() {
 
         {/* Homepage content */}
         <div className="h-screen flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2">
-          <div className="text-center h-80 md:h-[70vh] flex flex-col justify-center items-center space-y-2">
+          <div className="text-center h-80 md:h-[70vh] flex flex-col justify-center items-center space-y-2" data-aos="fade-up"  data-aos-duration="600">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#8338ec]">
               Self-Taught
             </h1>
@@ -25,7 +26,7 @@ export default function Home() {
               Beautiful Layouts
             </h1>
           </div>
-          <div className=" pt-16 flex justify-center items-center mb-48 md:h-[70vh]">
+          <div className=" pt-16 flex justify-center items-center mb-48 md:h-[70vh]"  data-aos="fade-down"  data-aos-duration="600">
             <img
               src={ProfilePic}
               alt="Profile Pic"

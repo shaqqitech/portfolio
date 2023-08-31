@@ -35,9 +35,9 @@ const Contact = () => {
   return (
     <section className="h-[fit-content] w-[95%] py-12 text-center pb-40" id="contact">
       <div className="container mx-auto">
-        <h1 className="text-4xl text-[#8338ec] font-bold mb-6">Contact</h1>
+        <h1 className="text-4xl text-[#8338ec] font-bold mb-6" data-aos="fade-down">Contact</h1>
         <div className="md:w-[80%] lg:w-[60%] mx-auto ">
-          <form onSubmit={sendEmail} ref={form} className=" rounded-xl shadow-lg dark:shadow-2xl dark:shadow-gray-700 p-6 space-y-4  hover:scale-105 duration-300">
+          <form onSubmit={sendEmail} ref={form} className=" rounded-xl shadow-lg dark:shadow-2xl dark:shadow-gray-700 p-6 space-y-4  hover:scale-105 duration-300"  data-aos="fade-up">
           
             <input
               type="text"
