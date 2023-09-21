@@ -1,5 +1,5 @@
 import ProfilePic from "../assets/images/mainPic.png";
-
+import CV from "../assets/Shafaqatcv.pdf"
 
 export default function Home() {
 
@@ -25,6 +25,7 @@ export default function Home() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#8338ec]">
               Beautiful Layouts
             </h1>
+            <a href={CV} className="focus:outline-none text-white bg-[#8338ec] hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" download={true}>Download CV</a>
           </div>
           <div className=" pt-16 flex justify-center items-center mb-48 md:h-[70vh]"  data-aos="fade-down"  data-aos-duration="600">
             <img
