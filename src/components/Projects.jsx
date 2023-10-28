@@ -1,11 +1,23 @@
 import React from "react";
 import ColorPellete from '../assets/images/colorpellete.png';
 import MusicPlayer from '../assets/images/musicplayer.jpg';
-import QRCode from '../assets/images/qrcode.jpg';
+import EShop from '../assets/images/eshop.png';
 import ResSite from '../assets/images/res-site.jpeg';
 
 const Projects = () => {
   const projectsData = [
+    {
+      title: "E-Commerce",
+      imageUrl: EShop,
+      githubLink: "https://github.com/shaqqitech/e-shopping",
+      liveDemoLink: "https://e-shopping-puce.vercel.app/",
+    },
+    {
+      title: "Responsive Site",
+      imageUrl: ResSite,
+      githubLink: "https://github.com/shaqqitech/react-tail-port",
+      liveDemoLink: "https://shaqqitech.github.io/react-tail-port/",
+    },
     {
       title: "Color Pellete",
       imageUrl: ColorPellete,
@@ -18,18 +30,8 @@ const Projects = () => {
       githubLink: "https://github.com/shaqqitech/music-player",
       liveDemoLink: "https://shaqqitech.github.io/music-player/",
     },
-    {
-      title: "QR Code Generator",
-      imageUrl: QRCode,
-      githubLink: "https://github.com/shaqqitech/qr-code-generator",
-      liveDemoLink: "https://shaqqitech.github.io/qr-code-generator/",
-    },
-    {
-      title: "Responsive Site",
-      imageUrl: ResSite,
-      githubLink: "https://github.com/shaqqitech/react-tail-port",
-      liveDemoLink: "https://shaqqitech.github.io/react-tail-port/",
-    },
+
+
   ];
 
   return (
