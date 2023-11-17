@@ -1,7 +1,7 @@
 import React from "react";
-import ColorPellete from '../assets/images/colorpellete.png';
-import MusicPlayer from '../assets/images/musicplayer.jpg';
 import EShop from '../assets/images/eshop.png';
+import Travo from '../assets/images/travo.png';
+import Songusic from '../assets/images/songusic.png';
 import ResSite from '../assets/images/res-site.jpeg';
 
 const Projects = () => {
@@ -13,23 +13,29 @@ const Projects = () => {
       liveDemoLink: "https://e-shopping-puce.vercel.app/",
     },
     {
+      title: "Travelling Site",
+      imageUrl: Travo,
+      githubLink: "https://github.com/shaqqitech/travo",
+      liveDemoLink: "https://travo-swart.vercel.app/",
+    },
+    {
+      title: "Music Layout",
+      imageUrl: Songusic,
+      githubLink: "https://github.com/shaqqitech/songusic",
+      liveDemoLink: "https://songusic.vercel.app/",
+    },
+    {
       title: "Responsive Site",
       imageUrl: ResSite,
       githubLink: "https://github.com/shaqqitech/react-tail-port",
       liveDemoLink: "https://shaqqitech.github.io/react-tail-port/",
     },
-    {
-      title: "Color Pellete",
-      imageUrl: ColorPellete,
-      githubLink: "https://github.com/shaqqitech/reactjs-color-pallete",
-      liveDemoLink: "https://shaqqitech.github.io/reactjs-color-pallete/",
-    },
-    {
-      title: "Music Player",
-      imageUrl: MusicPlayer,
-      githubLink: "https://github.com/shaqqitech/music-player",
-      liveDemoLink: "https://shaqqitech.github.io/music-player/",
-    },
+    // {
+    //   title: "Music Player",
+    //   imageUrl: MusicPlayer,
+    //   githubLink: "https://github.com/shaqqitech/music-player",
+    //   liveDemoLink: "https://shaqqitech.github.io/music-player/",
+    // },
 
 
   ];
