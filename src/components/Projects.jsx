@@ -2,7 +2,7 @@ import React from "react";
 import EShop from '../assets/images/eshop.png';
 import Travo from '../assets/images/travo.png';
 import MoviesHub from '../assets/images/movies-hub.png';
-import ResSite from '../assets/images/res-site.jpeg';
+import NewWay from '../assets/images/newway.png';
 
 const Projects = () => {
   const projectsData = [
@@ -19,26 +19,18 @@ const Projects = () => {
       liveDemoLink: "https://movies-hub-khaki.vercel.app/",
     },
     {
+      title: "NewWay Site",
+      imageUrl: NewWay,
+      githubLink: "https://github.com/shaqqitech/newway",
+      liveDemoLink: "https://newway-ruby.vercel.app/",
+    },
+    {
       title: "Travelling Site",
       imageUrl: Travo,
       githubLink: "https://github.com/shaqqitech/travo",
       liveDemoLink: "https://travo-swart.vercel.app/",
       
     },
-    {
-      title: "Responsive Site",
-      imageUrl: ResSite,
-      githubLink: "https://github.com/shaqqitech/react-tail-port",
-      liveDemoLink: "https://shaqqitech.github.io/react-tail-port/",
-    },
-    // {
-    //   title: "Music Player",
-    //   imageUrl: MusicPlayer,
-    //   githubLink: "https://github.com/shaqqitech/music-player",
-    //   liveDemoLink: "https://shaqqitech.github.io/music-player/",
-    // },
-
-
   ];
 
   return (
